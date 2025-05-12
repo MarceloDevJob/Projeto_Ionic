@@ -1,0 +1,59 @@
+.divpai2{
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    width: 98.3%;
+  }
+  
+  .filho3{
+    width: 70%;
+  }
+  
+  .filho4{
+    width: 29%;
+  }
+  
+  h3{
+    font-weight: bold;
+    color:#000000;
+  }
+  .logout{
+    transform: translateX(-10px);
+    ion-button{
+      --background:#B80000;
+      --border-radius: 10px;
+    }
+  }
+  .info{
+    margin: auto;
+    display: flex;
+  }
+  ion-toolbar{
+  
+    --height: 40px;
+    transform: scaleY(1.1);
+    
+
+  }
+  
+    
+    ion-button{
+    --background:#B80000;
+    --border-radius: 10px;
+      display: flex;
+   
+
+  }
+  ion-item{
+    --height: 40px;
+    transform: scaleY(1.1);
+
+  }
+  .logo{
+    ion-img{
+      transform: translateX(12%);
+      width: 80%;
+      height: 250px;
+    }
+  }
+  

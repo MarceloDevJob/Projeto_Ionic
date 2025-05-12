@@ -1,0 +1,41 @@
+ion-content{
+    --background: #FF9800;
+}
+
+.modulo{
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 10%;
+    border-radius: 10px;
+    width: 90vw;
+    height: auto;
+    background-color: grey;
+    position: absolute;
+}
+
+.pt1 ion-img{
+    padding-top: 30px;
+    display: flex;
+    margin: 10%;
+}
+
+.pt2{
+    text-align: center;
+    font-weight: bold;
+}
+
+.pt2 h1{
+    font-weight:bold;
+}
+
+ion-button{
+    display: flex;
+    margin: auto;
+    color: white;
+    font-weight: bold;
+    --background: #B80000;
+    margin-bottom: 30px;
+    width: 30%;
+    height: 20px;
+}

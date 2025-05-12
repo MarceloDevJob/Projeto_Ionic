@@ -1,0 +1,100 @@
+<!--Conteúdo da página-->
+<div class="ion-page" id="main-content"> 
+  <!--Cabeçalho da página-->
+  <div class="header">
+    
+    <ion-header>
+      
+      <!--Icone de usuário e botão com router para página de Login-->
+      
+        <ion-toolbar>
+          
+          <div class="logorest"><ion-img src="assets/pizzarest.png"></ion-img></div>
+       
+            <ion-avatar slot="end" aria-hidden="true"  class="ion-avatar">
+              
+              <ion-button [routerLink]="['/perfil']"  shape="round" fill="clear" >
+
+                <img alt="" src="https://ionicframework.com/docs/img/demos/avatar.svg" class="img">
+                
+
+              </ion-button>
+          
+          
+            </ion-avatar>
+
+        </ion-toolbar>
+
+      
+    
+    </ion-header>
+  
+  </div>
+    <!--"Body" da página-->
+    <div class="content">
+      
+      <ion-content>
+
+        <div class="home">
+          <!--Botão de anúncio-->
+          <div class="botão"><ion-button [routerLink]="['/salgadas']"> <div class="pizza"><ion-img src="assets/pngegg.png"></ion-img></div>     </ion-button></div>
+          <!--Barra de pesquisa-->
+          <form (ngSubmit)="pesq()" [formGroup]="pesquisa">
+
+          <ion-searchbar type="barra" formControlName="barra" placeholder="Pesquisar" [debounce]="500" (ionInput)="handleInput($event)" (ionInput)="pesq()" (ionInput)="dirt()" [(ngModel)]="input">     </ion-searchbar>
+         
+        <ion-note *ngIf="barra?.dirty">
+          <ion-list>
+            
+            <ion-item  *ngFor="let result of results " >
+
+              <ion-label>{{ result }}</ion-label>
+
+            </ion-item>
+            
+          </ion-list>
+        </ion-note>
+          </form>
+          <!--Seleção de tipo de produto-->
+          
+          <div class="botão2"><ion-button [routerLink]="['/salgadas']">  Salgada    </ion-button></div> 
+
+          <div class="botão3"><ion-button [routerLink]="['/doces']">  Doce    </ion-button></div>
+
+          <div class="botão4"><ion-button [routerLink]="['/bebidas']">  Bebidas    </ion-button></div>
+          <br>
+          <br>
+
+                    <!--Carrocel de produtos-->
+                    <div class="slider">
+
+                      <ul>
+
+                        <li><div class="butão5"><ion-button [routerLink]="['/pizza1']"> <div class="pizza2"><ion-img src="assets/pngegg (1).png"></ion-img></div>     </ion-button></div></li>
+                
+
+                
+
+                        <li><div class="butão6"><ion-button [routerLink]="['/pizza2']"> <div class="pizza3"><ion-img src="assets/pngegg (2).png"></ion-img></div>     </ion-button></div></li>
+
+                
+
+                
+
+                        <li><div class="butão7"><ion-button [routerLink]="['/pizza5']">   <div class="pizza4"><ion-img src="assets/pngegg (4).png"></ion-img></div>   </ion-button></div></li>
+                        
+                      </ul>
+
+                    
+                    </div>
+                    
+                    <br>
+                
+                    <div class="logo"><ion-img src="assets/pizzamenu.png"></ion-img></div>
+
+        </div>
+      </ion-content>
+   
+    </div>
+
+  </div>

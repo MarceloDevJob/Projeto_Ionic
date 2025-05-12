@@ -1,0 +1,46 @@
+ion-content{
+    --background: #FF9800;
+}
+
+ion-button{
+    --background: grey;
+    --border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    margin-top: 30px;
+    width: 80%;
+    height: 100px;
+}
+
+.pt1{
+    height: 95%;
+    width: 65%;
+}
+
+.pt2{
+    height: 97%;
+    width: 35%;
+}
+
+ion-img{
+    height: 100%;
+}
+
+.voltar ion-button{
+    --background: #B80000;
+    width: 30%;
+    height: 20px;
+}
+
+h5{
+    font-weight: bold;
+    color: white;
+    --background: #B80000;
+}
+
+p{
+    font-weight: bold;
+    color: white;
+    --background: #B80000;
+}

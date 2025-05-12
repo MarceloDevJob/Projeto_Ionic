@@ -1,0 +1,47 @@
+<ion-toolbar>
+  
+    <ion-title>Perfil</ion-title>
+
+
+      <div class="logout" slot="end">
+
+        <ion-button (click)="logout()">
+
+          <ion-icon slot="icon-only" name="log-out"> Logout </ion-icon>
+
+        </ion-button>
+
+      </div>
+
+
+  
+</ion-toolbar>
+
+
+<ion-content>
+  <br>
+  <div>
+  <ion-button (click)="irprincipal()">Retorne para a página principal</ion-button>
+  </div>
+  <br>
+  <div class="logo"><ion-img src="assets/pizzaperfil.png"></ion-img></div>
+  <br>
+  
+  <div class="info">
+    
+  <ion-item>Informe o seu Cep para fazermos a entrega!</ion-item>
+  </div>
+  <ion-item>
+    <ion-label position="floating">CEP</ion-label>
+    <ion-input type="text" [(ngModel)]="cep" name="cep"></ion-input>
+  </ion-item>
+ 
+  <ion-button (click)="consultarCep()">Consultar</ion-button>
+ 
+  <div *ngIf="endereco">
+    <p>Logradouro: {{ endereco.logradouro }}</p>
+    <p>Bairro: {{ endereco.bairro }}</p>
+    <p>Cidade: {{ endereco.localidade }}</p>
+    <p>Estado: {{ endereco.uf }}</p>
+  </div>
+</ion-content>

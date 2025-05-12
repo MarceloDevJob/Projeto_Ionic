@@ -1,0 +1,30 @@
+<ion-content [fullscreen]="true">
+
+  <div class="fundo">
+
+    <div class="filho1">
+      <img src="assets/pngeggA.png" alt="pizza">
+    </div>
+
+    <div class="filho2">
+      <img src="assets/pngeggA.png" alt="pizza">
+    </div>
+
+  </div>
+
+  <div id="container">
+    <h1>Login</h1>
+    <form (ngSubmit)="login()" [formGroup]="credentials">
+    <div class="inputs">
+      <ion-input type="email" formControlName="email" placeholder="Email"></ion-input>
+      <ion-note slot="error" *ngIf="(email?.dirty || email?.touched) && email?.errors">Este email é inválido</ion-note>
+      <br>
+      <ion-input type="password" formControlName="password" placeholder="Senha"></ion-input>
+      <ion-note slot="error" *ngIf="(password?.dirty) && password?.errors"
+				>A senha precisa de 6 caractéres</ion-note
+			>
+    </div>
+    <ion-button type="submit" [disabled]="!credentials.valid">ENTRAR</ion-button>
+    <p>Ainda não tem um login?<a [routerLink]="['/home']"> Cadastrar-se</a></p>
+  </form></div>
+</ion-content>
