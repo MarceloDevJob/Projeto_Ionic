@@ -5,7 +5,7 @@
 export const environment = {
   production: false ,
   firebase:{
-    apiKey: "AIzaSyDeEQlpaVInzG0BkGI7tMBuC7C4VXYzaL8",
+    apiKey: "Código retirado por segurança",
     authDomain: "pizzaria-projeto-teste-630e3.firebaseapp.com",
     projectId: "pizzaria-projeto-teste-630e3",
     storageBucket: "pizzaria-projeto-teste-630e3.appspot.com",
